@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_text_field_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+    >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:background="@drawable/login_btn_bg"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_text_field_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/direction_etv"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_textfield_bg_red"
+            android:hint="Direction"
+            android:textSize="20dp"
+            android:inputType="none"
+            android:textAlignment="center"
+            android:gravity="center"
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <!--            spacing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            ></LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/battery_etv"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_pass_bg"
+            android:hint="Password"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:inputType="textPassword"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+        <!--            spacing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            ></LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name_etv"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:visibility="invisible">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </LinearLayout>
+
+</RelativeLayout>
